@@ -6,9 +6,9 @@ install:
 # Launch local dev playground
 playground:
 	@echo "==============================================================================="
-	@echo "| 🚀 Starting your agent playground...                                        |"
+	@echo "| Starting your agent playground...                                          |"
 	@echo "|                                                                             |"
-	@echo "| 💡 Try asking: What's the weather in San Francisco?                         |"
+	@echo "| Try asking: What's the weather in San Francisco?                           |"
 	@echo "==============================================================================="
 	uv run uvicorn app.server:app --host 0.0.0.0 --port 8000 --reload &
 	PORT=8501 npm --prefix frontend start
