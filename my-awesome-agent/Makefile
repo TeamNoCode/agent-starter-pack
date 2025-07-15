@@ -13,6 +13,10 @@ playground:
 	uv run uvicorn app.server:app --host 0.0.0.0 --port 8000 --reload &
 	PORT=8501 npm --prefix frontend start
 
+# Launch playground with Google AI Studio (requires GOOGLE_API_KEY)
+playground-api:
+	@./start-playground.sh
+
 # Deploy the agent remotely
 # Usage: make backend [IAP=true] [PORT=8080] - Set IAP=true to enable Identity-Aware Proxy, PORT to specify container port
 backend:
