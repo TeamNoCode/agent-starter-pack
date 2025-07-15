@@ -16,6 +16,7 @@ echo "==========================================================================
 
 # Start the backend
 echo "Starting backend server..."
+cd /workspaces/agent-starter-pack/my-awesome-agent
 uv run uvicorn app.server:app --host 0.0.0.0 --port 8000 --reload &
 BACKEND_PID=$!
 
