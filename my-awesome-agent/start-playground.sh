@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Set up the API key and environment for Google AI Studio
-export GOOGLE_API_KEY="AIzaSyCQmjEDDDArhPxr_2iGtS73VcZfGTDHF0Q"
+export GOOGLE_API_KEY="F0Q"
 export VERTEXAI=false
 
 echo "✅ Using Google AI Studio with API key"
